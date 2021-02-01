@@ -16,9 +16,6 @@ const client = new Client({
     
   })
 
-  
-
-
 app.get('/', (req, res) =>{
         
     client.query('SELECT id FROM data;')
