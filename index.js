@@ -29,7 +29,7 @@ app.get('/', (req, res) =>{
         client.query('UPDATE data SET id = ' + counter)
         .then(r=>
         {
-            res.send('The software is running. Number of visits: ' + counter ); 
+            res.send('The software is running. Number of visits when you refresh from the browser: ' + counter ); 
             console.log(counter);
         });
     })
